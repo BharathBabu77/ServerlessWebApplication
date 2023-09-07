@@ -14,7 +14,7 @@ Create GET method and link getEmployee lambda function
 Create POST method and link insertEmployeeData lambda function
 Deploy API Gateway and copy the link generated into scripts.js file and upload in to S3
 Enable CORS
-
+ 
 Execution:
 Copy the cloud front distribution domain name and paste in browser
 Enter the Employee details and click on save profile

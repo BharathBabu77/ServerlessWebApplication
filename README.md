@@ -2,7 +2,7 @@
 
 Services used:S3,Cloud Front,Lambda,IAM Role,Dynamo DB,API Gateway
 
-Steps:
+Steps: 
 Create an S3 bucket to store the front end code(profile.html, scripts.js)
 Create a cloudfront distribution and copy the policy generated to the S3 bucket policy
 Create an IAM role which has DynamoDB full access

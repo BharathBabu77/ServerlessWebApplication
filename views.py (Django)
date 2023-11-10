@@ -1,0 +1,19 @@
+from django.http import JsonResponse
+from .models import EmployeeProfile
+
+def insert_employee(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        EmployeeProfile.objects.create(
+            empId=data['empId'],
+            empAge=data['empAge'],
+            empFirstName=data['empFirstName'],
+            empLastName=data['empLastName']
+        )
+        return JsonResponse({'status': 'Employee added successfully'})
+    else:
+        return JsonResponse({'error': 'Invalid request method'})
+
+def retrieve_employees(request):
+    employees = list(EmployeeProfile.objects.values())
+    return JsonResponse({'employees': employees})

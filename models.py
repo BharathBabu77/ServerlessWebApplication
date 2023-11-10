@@ -5,3 +5,4 @@ class EmployeeProfile(models.Model):
     empAge = models.IntegerField()
     empFirstName = models.CharField(max_length=50)
     empLastName = models.CharField(max_length=50)
+ 
